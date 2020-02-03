@@ -4,19 +4,53 @@ body{
   background: rgb(104, 189, 168)
 }
 
+.topsec{
+  display: flex;
+  width: 98%;
+  height: 100px;
+  /* background: brown; */
+  margin: 0 auto;
+  padding-left: 30px;
+  margin-bottom: 200px;
+  justify-content: center;
+  align-content: center;
+}
+
+.middle{
+  display: flex;
+  position: relative;
+  width: 75%;
+  height: 60%;
+  /* background: rgb(224, 67, 33); */
+  margin: 0 auto;
+}
+
 h1{
-  font-size: 40px;
+  position: relative;
+  font-size: 70px;
   font-family: "blenny";
-  margin: 20px;
-  text-align: center;
   color: rgb(255, 255, 255)
 }
 
-ul{
-  font-weight: 400;
+.projectlist{
+  display: flex;
+  flex-direction: column;
   font-family: sans-serif;
   color: white;
-  text-align: center;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  /* background: rgb(204, 238, 106); */
+}
+
+.menu{
+  position: relative;
+  border-bottom: solid 1px black;
+  width: 100%;
+  margin: 15px;
+  height: 45px;
+  /* background: rgb(113, 181, 126); */
 }
 
 a:link {
@@ -29,7 +63,12 @@ a:visited {
   color: white;
 }
 
-li{
-  list-style-type: none;
-  margin: 20px;
+a:hover{
+  color: black;
+}
+
+h2{
+  list-style: none;
+  font-weight: 100;
+  text-align: center;
 }
