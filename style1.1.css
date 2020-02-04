@@ -1,0 +1,33 @@
+.btn {
+    font-family: "urbane";
+    padding: 30px;
+    background: rgb(99, 135, 150);
+    position: fixed;
+    transition: background 1s ease,
+    transform 1s;
+  }
+
+.btn:hover{
+    background: rgb(47, 97, 113);
+    transform: scale(1.25);
+}
+
+.next-btn{
+  top: 50%;
+  right: 0;
+}
+
+.prev-btn{
+  top: 50%;
+  left: 0;
+}
+
+.btn:link{
+  text-decoration: none;
+  color: white;
+}
+
+.btn:visited{
+  text-decoration: none;
+  color: white;
+}

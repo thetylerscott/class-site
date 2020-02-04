@@ -1,0 +1,29 @@
+p{
+  margin: 0 auto;
+  width: 200px;
+  position: flex;
+}
+
+h2{
+  position: flex;
+  margin: 0 auto;
+  width:200px;
+}
+
+.section{
+  margin: 60px;
+}
+
+h1{
+  margin: 0 auto;
+  width:433px;
+  padding: 5px;
+}
+
+.all{
+  margin: 200px;
+}
+
+em{
+  color: red;
+}

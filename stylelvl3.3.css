@@ -1,0 +1,23 @@
+p{
+  position: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+
+h1{
+  position: flex;
+  margin: 0 auto;
+  width:433px;
+  border-bottom: 2px solid black;
+  padding: 5px;
+}
+
+.all{
+  position: flex;
+  margin: 100px;
+}
+
+.red{
+  color: red;
+}
