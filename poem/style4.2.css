@@ -1,0 +1,25 @@
+.all{
+  font-family: "urbane";
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  /* padding-top: 170px; */
+  padding-left: 525px;
+  text-align: left;
+  font-size: 80px;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 25%;
+  font-size: 200px;
+  letter-spacing:-20px;
+  line-height: 70%;
+  left: 150px;
+  top: 15px;
+  font-family: "blenny";
+  color: rgb(105, 251, 159);
+  /* background: green; */
+}

@@ -3,7 +3,7 @@
     padding: 30px;
     background: rgb(99, 135, 150);
     position: fixed;
-    transition: background 1s ease,
+    transition: background opacity 1s ease,
     transform 1s;
   }
 
