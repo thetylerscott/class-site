@@ -1,14 +1,14 @@
 .btn {
     font-family: "urbane";
     padding: 30px;
-    background: rgb(99, 135, 150);
+    background: rgb(105, 251, 159);
     position: fixed;
     transition: background 1s ease,
     transform 1s;
   }
 
 .btn:hover{
-    background: rgb(47, 97, 113);
+    background: rgb(178, 237, 200);
     transform: scale(1.25);
 }
 

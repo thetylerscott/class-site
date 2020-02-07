@@ -1,3 +1,7 @@
+body{
+  background-image: url(sparkle.jpg);
+}
+
 .all{
   font-family: "urbane";
   display: flex;
@@ -14,11 +18,11 @@
   flex-direction: column;
   position: fixed;
   justify-content: space-around;
-  width: 40%;
-  font-size: 130px;
-  letter-spacing: -15px;
-  line-height: 90%;
-  left: 10px;
+  width: 25%;
+  font-size: 200px;
+  letter-spacing:-20px;
+  line-height: 70%;
+  left: 150px;
   top: 15px;
   font-family: "blenny";
   color: rgb(105, 251, 159);
@@ -32,21 +36,16 @@
   animation: pulse 5s infinite ease-in-out alternate;
 }
 
-h2{
-  font-size: 80px;
-  font-weight: normal;
-}
-
-a:link {
-  text-decoration: none;
-  color: rgb(105, 251, 159);
-}
-
-a:visited {
-  text-decoration: none;
-  color: rgb(105, 251, 159);
-}
-
 a:hover{
-  color: black;
+  animation: vanish 20s;
 }
+
+@keyframes pulse {
+  0% {color: rgb(105, 251, 159);}
+  100% {color:rgb(49, 209, 180);}
+}
+
+/* @keyframes vanish {
+  0% {transform: translateX(0);}
+  100% {transform: translateX(4000px);}
+} */
