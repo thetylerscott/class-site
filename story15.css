@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+video{
+  position: fixed;
+  top: -20vh;
+  height: 150vh;
+  opacity: .2;
+}
+
+.text{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "HWT Arabesque";
+  font-size: 40px;
+  color: white;
+  height: 20vh;
+  width: 60vw;
+  z-index: 99;
+  top: 40vh;
+  left: 20vw;
+}
+
+.link{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  display: block;
+  font-family: "Filson Soft";
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transform: translateX(100%);
+  margin: 0;
+  animation: scrollback 15s linear infinite;
+  z-index: 9999}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+@keyframes gradient {
+  0% {background: rgb(173, 249, 227);}
+  20% {background: rgb(255, 200, 138);}
+  50% {background: rgb(255, 136, 239);}
+  70% {background: rgb(208, 176, 255);}
+  100% {background: rgb(122, 255, 99);}
+}
+
+@keyframes scrollback {
+  0% {transform: translateX(-100%);}
+  100% {transform: translateX(150%);}
+}

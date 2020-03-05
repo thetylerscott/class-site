@@ -1,0 +1,193 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite ease;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.w{
+  position: fixed;
+  left: 5vw;
+  top: 10vh;
+  height: 15vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  font-family: "HWT Arabesque";
+  animation: pulse 5s infinite ease alternate;
+  opacity: .5;
+}
+
+.o{
+  position: fixed;
+  left: 35vw;
+  top: 65vh;
+  height: 15vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 170px;
+  font-family: "HWT Arabesque";
+  animation: pulse 8s infinite ease alternate;
+  opacity: .5;
+}
+
+.o .hovered{
+  display: none;
+}
+
+.o:hover .hovered{
+  display: block;
+}
+
+.o:hover .start {
+  display: none;
+}
+
+.h .hovered{
+  display: none;
+}
+
+.h:hover .hovered{
+  display: block;
+}
+
+.h:hover .start {
+  display: none;
+}
+
+.a{
+  position: fixed;
+  left: 55vw;
+  top: 30vh;
+  height: 15vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  font-family: "HWT Arabesque";
+  animation: pulse 4s infinite ease alternate;
+  opacity: .5;
+}
+
+.h{
+  position: fixed;
+  left: 87vw;
+  top: 60vh;
+  height: 15vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  font-size: 130px;
+  font-family: "HWT Arabesque";
+  animation: pulse 7s infinite ease alternate;
+  opacity: .5;
+}
+
+
+.sparkle1{
+  position: fixed;
+  left: 15vw;
+  top: 60vh;
+  height: 10vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 2s alternate ease infinite;
+}
+
+.sparkle2{
+  position: fixed;
+  left: 36vw;
+  top: 10vh;
+  height: 15vh;
+  width: 15vw;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 4s alternate ease infinite;
+}
+
+.sparkle3{
+  position: fixed;
+  left: 60vw;
+  top: 45vh;
+  height: 8vh;
+  width: 8vw;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 5s alternate ease infinite;
+}
+
+.sparkle4{
+  position: fixed;
+  left: 45vw;
+  top: 85vh;
+  height: 13vh;
+  width: 13vw;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 7s alternate ease infinite;
+}
+
+.sparkle5{
+  position: fixed;
+  left: 90vw;
+  top: 5vh;
+  height: 10vh;
+  width: 10vw;
+  justify-content: center;
+  align-items: center;
+  animation: opacity 3s alternate ease infinite;
+}
+
+img{
+  max-height: 15vh;
+  max-width: 15vw;
+}
+
+.timeline img{
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+  left: 20%;
+  bottom: 2%;
+  z-index: 999999;
+}
+
+@keyframes gradient {
+  0% {background: rgb(180, 244, 226);}
+  20% {background: rgb(249, 214, 175)}
+  50% {background: rgb(246, 185, 238);}
+  70% {background: rgb(207, 189, 249)}
+  100% {background: rgb(255, 255, 255);}
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);}
+
+  100%{
+    transform: scale(1.25);
+  }
+}

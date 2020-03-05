@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+  padding: 0;
+  /* animation: gradient 6s alternate infinite; */
+  z-index: -9999;
+}
+
+.square1 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  width: 100vw;
+  background: black;
+}
+
+
+a{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 100%;
+  /* background: black;
+  stroke: solid white 2px; */
+}
+
+.square2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  width: 100vw;
+  top: 25%;
+  background: black;
+}
+
+.square3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  width: 100vw;
+  top: 50%;
+  background: black;
+}
+
+div:hover{
+  background: rgb(34, 34, 34);
+}
+
+.square4 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  height: 25vh;
+  width: 100vw;
+  top: 75%;
+  background: black;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+      <title>let's take a trip</title>
+      <link rel="icon" href="tab-01.jpg">
+      <link rel="stylesheet" href="story12.css">
+      <meta name="viewport" content="width=device, initial-scale=1.0">
+      <script src="p5.min.js"></script>
+      <script src="sketch12.js"></script>
+  </head>
+
+  <body>
+    <!-- <div class= "container"> -->
+      <div id="screen" class="watch-tv"></div>
+
+
+        <div class="tv-wrap frame"></div>
+
+        <!-- <img id="screen" src="tv.svg" alt=""> -->
+        <div class="tv-wrap">
+          <div class="tv">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TPYxbMvgR30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          </div>
+        </div>
+
+    <!-- </div> -->
+    <img onclick="remote()" id="remote" src="remote-01.png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+      function remote() {
+         var element = document.getElementById("screen");
+         element.classList.toggle("tvon");
+      }
+    </script>
+
+      <a class="next" href="story15.html"><img src="ufo-01.png"></a>
+
+
+  </body>
+</html>

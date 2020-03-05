@@ -1,0 +1,66 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -99999;
+} */
+
+
+.text{
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "HWT Arabesque";
+  font-size: 40px;
+  color: white;
+  height: 20vh;
+  width: 60vw;
+  z-index: 99;
+  top: 40vh;
+  left: 20vw;
+  animation: blur 5s infinite alternate;
+}
+
+.link a{
+  position: fixed;
+  display: block;
+  height: 5vh;
+  width: 5vh;
+  /* background: blue; */
+  pointer-events: all;
+  z-index: 9999;
+  top: 45vh;
+  left: 23vw;
+}
+
+.link a:hover{
+  animation: gradient 2s alternate infinite;
+}
+
+@keyframes gradient {
+  0% {background: rgb(148, 251, 222);}
+  20% {background: rgb(255, 200, 138);}
+  50% {background: rgb(255, 136, 239);}
+  70% {background: rgb(208, 176, 255);}
+  100% {background: rgb(122, 255, 99);}
+}
+
+@keyframes blur {
+  0% {filter: blur(0);}
+  100% {filter: blur(2px);}
+}

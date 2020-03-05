@@ -1,0 +1,171 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  /* animation: gradient 6s alternate infinite ease; */
+  overflow: hidden;
+}
+
+/* .container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background: blue; */
+/* }  */
+
+
+.watch-tv{
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  width: 55.6vw;
+  height: 31.275vw;
+  justify-content: center;
+  align-items: center;
+  background: rgb(43, 43, 43);
+  /* z-index: -1; */
+  z-index: 9999;
+}
+
+
+.tv-wrap {
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  width: 55.6vw;
+  height: 31.275vw;
+}
+
+.frame {
+  position: fixed;
+  top: 20vh;
+  left: 25vw;
+  pointer-events: none;
+  border: 20px solid black;
+  z-index: 9999;
+}
+
+.tv{
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  z-index: -1;
+  justify-content: center;
+  align-items: center;
+  /* border: 20px solid black; */
+
+  position: relative;
+  padding-bottom: 56.25%;
+  /* padding-top: 30px;  */
+  height: 0;
+  overflow: hidden;
+
+  background: red;
+
+  z-index: -2;
+  z-index: 999;
+}
+
+
+.tv iframe,
+.tv object,
+.tv embed {
+position: absolute;
+top: 50%;
+left: 50%;
+width: 102%;
+height: 102%;
+transform: translate(-50%, -50%);
+}
+
+iframe{
+  /* position: relative; */
+  /* height: 90%;
+  width: 90%; */
+}
+
+#remote{
+  position: absolute;
+  width: 14vw;
+  height: 21vh;
+  right: 0;
+  opacity: 0;
+  bottom: 0vh;
+}
+
+#remote:hover{
+  opacity: 1;
+}
+
+#screen {
+  max-width: 100%;
+  position: absolute;
+  /* padding:30px; */
+}
+
+.tvon {
+  display: none;
+}
+
+.next{
+  max-height: 5vh;
+  max-width: 3vw;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  animation: move 7s linear infinite;
+  /* background: red; */
+}
+
+/* @keyframes gradient {
+  0% {background: rgb(148, 251, 222);}
+  20% {background: rgb(255, 200, 138);}
+  50% {background: rgb(255, 136, 239);}
+  70% {background: rgb(208, 176, 255);}
+  100% {background: rgb(122, 255, 99);}
+} */
+
+.next{
+  height: 10vh;
+  width: 10vh;
+  position: fixed;
+  z-index: 1;
+  top: 45vh;
+  left: 0;
+  animation: move 7s linear infinite;
+  /* background: red; */
+}
+
+
+.next img{
+  max-height: 10vh;
+  max-width: 6vw;
+  z-index: 9999999;
+}
+
+@keyframes move {
+  0% {
+    display: block;
+    /* opacity: 1; */
+    transform: translateX(-10vw) rotate(0deg);}
+
+  70% {
+    display: block;
+    /* opacity: 0; */
+    transform: translateX(100vw)rotate(475deg);
+  }
+  100%{
+    display: none;
+    /* opacity: 1; */
+    transform: translateX(150vw);
+  }
+}

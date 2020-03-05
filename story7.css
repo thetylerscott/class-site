@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 5vw;
+  font-size: 120px;
+  font-family: "HWT Arabesque";
+  height: 20vh;
+  width: 90vw;
+  text-align: center;
+  color: white;
+  opacity: .45;
+  z-index: -999;
+}
+
+.next a{
+  position: fixed;
+  right: 2vw;
+  bottom:2vh;
+  text-decoration: none;
+  color: black;
+  line-height: 25px;
+  display: inline-block;
+  font-family: "Filson Soft"
+}
+
+@keyframes gradient {
+  0% {background: rgb(180, 244, 226);}
+  20% {background: rgb(249, 214, 175);}
+  50% {background: rgb(246, 185, 238);}
+  70% {background: rgb(207, 189, 249);}
+  100% {background: rgb(125, 238, 106);}
+}
+
+@media screen and (max-width:600px){
+  .text{
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+}

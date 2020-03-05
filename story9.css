@@ -1,0 +1,96 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  align-items: center;
+  justify-content: center;
+}
+
+.text{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 5vw;
+  top: 20vh;
+  font-size: 120px;
+  font-family: "SewnM-Regular";
+  height: 20vh;
+  width: 90vw;
+  text-align: center;
+  color: white;
+  opacity: .45;
+  z-index: 999;
+}
+
+.text:hover{
+  font-family: "HWT Arabesque";
+}
+
+.back{
+  position: fixed;
+  display: block;
+  height: 3vh;
+  width: 7vw;
+  top: 40vh;
+  left: 5vw;
+  /* animation: gradient 6s alternate infinite; */
+  /* background: red; */
+  /* animation-play-state: running; */
+  z-index: 9999999;
+  pointer-events: all;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.back a{
+  top: 40%;
+  left: 35%;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Filson Soft";
+  color: white;
+  text-decoration: none;
+}
+
+.back:hover{
+  /* animation-play-state: paused; */
+  opacity: 1;
+}
+
+.deeper{
+  display: block;
+  width: 12vw;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 103vh;
+}
+
+.deeper img{
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 103vh;
+  opacity: .45;
+}
+
+@keyframes gradient {
+  0% {background: rgb(141, 201, 184);}
+  20% {background: rgb(209, 178, 143);}
+  50% {background: rgb(218, 162, 211);}
+  70% {background: rgb(177, 159, 217);}
+  100% {background: rgb(105, 201, 89);}
+}
+
+@media screen and (max-width:600px){
+  .text{
+    font-size: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  .deeper{
+    font-size: 10px;
+  }
+}

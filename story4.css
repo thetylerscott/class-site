@@ -1,0 +1,69 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite ease;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background: blue; */
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 45vh;
+  width: 60vw;
+  font-size: 150px;
+  font-family: "HWT Arabesque";
+}
+
+.text2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  width: 60vw;
+  font-size: 60px;
+  font-family: "Filson Soft";
+  margin-top: 10vh;
+  text-align: center;
+  opacity: 0;
+}
+
+.text2:hover{
+  opacity: 1;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+@keyframes gradient {
+  0% {background: rgb(225, 251, 244);}
+  20% {background: rgb(246, 236, 225)}
+  50% {background: rgb(247, 231, 245);}
+  70% {background: rgb(231, 224, 247)}
+  100% {background: rgb(255, 255, 255);}
+}
+
+@media screen and (max-width:600px){
+  .text{
+    font-size: 70px;
+  }
+  .text2{
+    font-size: 30px;
+  }
+}

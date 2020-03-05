@@ -1,0 +1,110 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite ease;
+  z-index: -9999
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -999
+}
+
+.bunny img{
+  position: fixed;
+  /* height: 20vh; */
+  width: 17vw;
+  left: 41.5vw;
+  top: 40vh;
+  z-index: 1;
+}
+
+.good a{
+  position: absolute;
+  display: block;
+  height: 40vh;
+  width: 25vw;
+  top: 30vh;
+  left: 10vw;
+}
+
+.good{
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.good:hover{
+  animation: gradientblue 4s infinite alternate;
+}
+
+.good img{
+  position: absolute;
+  /* height: 40vh; */
+  width: 25vw;
+  top: 30vh;
+  left: 10vw;
+  pointer-events: none;
+}
+
+.bad{
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  right: 0;
+}
+
+.bad img{
+  position: absolute;
+  /* height: 40vh; */
+  width: 25vw;
+  pointer-events: none;
+}
+
+.bad:hover{
+  animation: gradientred 4s infinite alternate;
+}
+
+.bad a{
+  position: absolute;
+  display: block;
+  height: 40vh;
+  width: 25vw;
+  top: 30vh;
+  right: 10vw;
+  pointer-events: all;
+  z-index: 1;
+}
+
+@keyframes gradientred {
+  0% {background: rgb(244, 180, 180);}
+  20% {background: rgb(214, 130, 130);}
+  50% {background: rgb(231, 121, 121);}
+  70% {background: rgb(254, 199, 199);}
+  100% {background: rgb(249, 215, 215);}
+}
+
+@keyframes gradientblue {
+  0% {background: rgb(180, 202, 244);}
+  20% {background: rgb(129, 214, 209)}
+  50% {background: rgb(121, 231, 214);}
+  70% {background: rgb(200, 233, 254);}
+  100% {background: rgb(215, 249, 242);}
+}
+
+@keyframes gradient {
+  0% {background: rgb(180, 244, 226);}
+  20% {background: rgb(249, 214, 175);}
+  50% {background: rgb(246, 185, 238);}
+  70% {background: rgb(207, 189, 249);}
+  100% {background: rgb(125, 238, 106);}
+}

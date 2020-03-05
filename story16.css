@@ -1,0 +1,75 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  /* align-items: center; */
+  justify-content: center;
+  overflow: hidden;
+}
+
+.form{
+  position: relative;
+  height: 55vh;
+  width: 50vw;
+  border-radius: 20px;
+  border: white solid 5px;
+  margin-top: 10%;
+  left: 23%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: "HWT Arabesque";
+  font-size: 24px;
+  color: white;
+}
+
+
+button {
+  position: absolute;
+  height: 10%;
+  width: 15%;
+  padding: 10px;
+  border: white solid 5px;
+  bottom: 5%;
+  left: 45%;
+  background:none;
+  text-align: center;
+}
+
+textarea {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  border: white solid 5px;
+  border-radius: 7px;
+  padding: 10px;
+  background: none;
+  font-size: 16px;
+  left: 23%;
+  font-family: "Filson Soft";
+  color: white;
+}
+
+a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 35%;
+  font-family: "Filson Soft";
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+@keyframes gradient {
+  0% {background: rgb(216, 238, 232);}
+  20% {background: rgb(238, 217, 192);}
+  50% {background: rgb(238, 203, 234);}
+  70% {background: rgb(207, 195, 233);}
+  100% {background: rgb(184, 240, 175);}
+}

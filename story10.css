@@ -1,0 +1,49 @@
+body{
+  margin: 0;
+  padding: 0;
+  animation: gradient 6s alternate infinite;
+  z-index: -9999;
+  overflow: hidden;
+}
+
+video{
+  position: fixed;
+  height: 110vh;
+  opacity: .2;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -99999;
+}
+
+.alien{
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 35vh;
+  right:40vw;
+  height: 30vh;
+  pointer-events: all;
+}
+
+.alien img{
+  position: relative;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+
+@keyframes gradient {
+  0% {background: rgb(148, 251, 222);}
+  20% {background: rgb(255, 200, 138);}
+  50% {background: rgb(255, 136, 239);}
+  70% {background: rgb(208, 176, 255);}
+  100% {background: rgb(122, 255, 99);}
+}
